@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+		xmlns:th="http://www.thymeleaf.org" >
+		
+<head>
+	<title>Index</title>
+	<meta http-equiv="Content-Type" />
+</head>
+
+<body>
+
+	Username: <span th:text="${username}"></span><br/>
+	Password: <span th:text="${password}"></span><br/>
+	Title: <span th:text="${title}"></span><br/>
+	Body: <span th:text="${body}"></span><br/>
+	Role: <span th:text="${role}"></span>
+	<hr/>
+	
+	
+	<a th:href="@{/login}">Login</a>
+
+	<h3>User</h3>
+	<a th:href="@{/users}">Index</a>
+	<a th:href="@{/users/path}">Path</a>	
+	<hr/>
+	
+	<h3>Admin</h3>
+	<a th:href="@{/admin}">Index</a>
+	<a th:href="@{/admin/path}">Path</a>
+	<hr/>
+	
+	<h3>Adus</h3>
+	<a th:href="@{/adus}">Index</a>
+	<a th:href="@{/adus/path}">Path</a>
+	
+	<br/>
+	<hr/>
+	<a th:href="@{/logout}">Logout</a>
+	
+
+</body>
+
+</html>
+	
